@@ -31,57 +31,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons-core.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
     <div class="wm-topstrip">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="wm-language">
                         <ul>
-                            <li>
+                            <!-- <li>
                                 <pre><a href="#">English |</a></pre>
-                            </li>
-                            <li><a href="#">Yoruba</a></li>
+                            </li> -->
+                            <!-- <li><a href="#">Yoruba</a></li> -->
                             <li>
-                                <a href="./signin.html" data-toggle="modal" data-target="#ModalLogin">login</a>
+                                <a href="./signin.html" target="_blank" data-toggle="modal"
+                                    data-target="#ModalLogin">login |</a>
                             </li>
                             <li>
-                                <a href="./signup.html" data-toggle="modal" data-target="#ModalLogin">Register</a>
+                                <a href="./signup.html" target="_blank" data-toggle="modal"
+                                    data-target="#ModalLogin">Register |</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html" target="_blank" data-toggle="modal"
+                                    data-target="#ModalLogin">Contact |</a>
+                            </li>
+                            <li>
+                                <a href="./Dashboard.html" target="_blank" data-toggle="modal"
+                                    data-target="#ModalLogin">Dashboard</a>
                             </li>
                         </ul>
                     </div>
-                    <ul class="wm-adminuser-section">
-                        <li>
-                        </li>
-                        <li>
-                        </li>
-                        <!-- <li>
-                            <a href="./contact.html">Contact</a>
-                        </li> -->
-                        <li>
-                            <a href="#" class="wm-search-btn" data-toggle="modal" data-target="#ModalSearch"><i
-                                    class="wmicon-search"></i></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <div class='container-fluid  align-items-center py-2' style='background-color: "#39394D'>
-        <div class="row justify-content-end">
-            <div class='col-md-4 text-end'>
-                <div class='top'>
-                    <a href="#"> Request a Demo</a>
-                    <a href="#"> 1.888.799.9666</a>
-                    <a href="#">Support</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
+
     <nav class="navbar navbar-expand-lg navbar-light  bg-light">
         <div class="container-fluid">
             <a href="./index.html" target="_blank" class="navbar-brand text-white"><img src="./images/logo.png"
@@ -106,7 +95,8 @@
                             Checking</a></li>
                     <li class="nav-item"><a class="nav-link" target="_blank"
                             href="https://portal.astc.sch.ng/">Portal</a></li>
-                    <li class="nav-item"><a class="nav-link" target="_blank" href="https://cbt.koadit.com">CBT</a></li>
+                    <li class="nav-item"><a class="nav-link" target="_blank" href="https://cbt.koadit.com">CBT</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -124,35 +114,26 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./images/money.jpeg" alt=" Los Angeles" style="height:80vh;width:100%;">
-                <!-- <main class="px-3">
-                    <h1>Cover your page.</h1>
-                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download,
-                        edit the text,
-                        and add your own fullscreen background photo to make it your own.</p>
-                    <p class="lead">
-                        <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-                    </p>
-                </main> -->
                 <div class="carousel-caption">
-                    <h2 style="font-size:28px;color: black;">We Ensure better education for a better world</h2>
+                    <h1>We Ensure better education for a better world</h1>
                     <p>Providing standard and quality Vocational skills.</p>
-                    <p style="margin-bottom:90px;"> <a href="#" class="main_btn">Get Started</a></p>
+                    <!-- <p style="margin-bottom:90px;"> <a href="#" class="main_btn">Get Started</a></p> -->
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="./images/background1.jpg" style="height:80vh;width:100%; " alt="Chicago" class="d-block">
                 <div class="carousel-caption">
-                    <h2 style="font-size:28px;color: black;">We Ensure better education for a better world</h2>
+                    <h1>We Ensure better education for a better world</h1>
                     <p>Providing standard and quality Vocational skills.</p>
-                    <p style="margin-bottom:90px;"> <a href="#" class="main_btn">Get Started</a></p>
+                    <!-- <p style="margin-bottom:90px;"> <a href="#" class="main_btn">Get Started</a></p> -->
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="./images/background2.jpg" alt="New York" class="d-block" style="height:80vh;width:100%;">
                 <div class="carousel-caption">
-                    <h2 style="font-size:28px;color: black;">We Ensure better education for a better world</h2>
+                    <h1>We Ensure better education for a better world</h1>
                     <p>Providing standard and quality Vocational skills.</p>
-                    <p style="margin-bottom:90px;"> <a href="#" class="main_btn">Get Started</a></p>
+                    <!-- <p style="margin-bottom:90px;"> <a href="#" class="main_btn">Get Started</a></p>s -->
                 </div>
             </div>
         </div>
@@ -182,7 +163,7 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-4 mb-3">
-                <div class="card border" style="width: 25rem;">
+                <div class="card border" style="width:auto;">
                     <img src="./images/background2.jpg" class="card-img-top" alt="...">
 
                     <div class="card-body border  border-0">
@@ -200,7 +181,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-3">
-                <div class="card border " style="width: 25rem;">
+                <div class="card border " style="width:auto">
                     <img src="./images//background3.jpg" class="card-img-top" alt="...">
 
                     <div class="card-body border  border-0">
@@ -218,7 +199,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card border " style="width: 25rem; margin-bottom: 34px;">
+                <div class="card border " style="width:auto; margin-bottom: 34px;">
                     <img src="./images//background3.jpg" class="card-img-top" alt="...">
 
                     <div class="card-body border  border-0">
@@ -235,197 +216,31 @@
                     </div>
                 </div>
 
-                <!-- <p><br>As you all know, education is a foundation of our society, and it is more important now than
-                        ever before to
-                        equip our students with the necessary skills and knowledge to succeed in a rapidly changing
-                        world. Our Islamic
-                        school is committed to providing a well-rounded education that not only focuses on academic
-                        excellence but also
-                        helps students develop a strong moral character and a deep connection to their faith.</p>
-                    <p><br>We believe that education is not just about gaining knowledge, but it is also about
-                        developing critical
-                        thinking skills, fostering creativity and innovation, and instilling values such as respect,
-                        responsibility, and
-                        compassion. Our curriculum is designed to meet the diverse needs of our students, and we strive
-                        to provide an
-                        environment that is conducive to learning, where every student is encouraged to reach their full
-                        potential.<br><br>In addition to academic excellence, we also place a strong emphasis on
-                        character development
-                        and spiritual growth. Our school offers a variety of programs and activities, including Islamic
-                        studies, Quranic
-                        studies, and community service opportunities, that help students grow in their faith and become
-                        active members
-                        of their communities.<br><br>As we embark on another academic year, I would like to remind
-                        everyone of the
-                        importance of working together to achieve our shared goals. Our students, teachers, parents, and
-                        staff are all
-                        critical to our success, and I encourage everyone to play their part in helping us create a
-                        dynamic and
-                        supportive learning environment.<br><br>In conclusion, I would like to express my deep
-                        appreciation for the
-                        trust that you have placed in us, and I assure you that we will do our utmost to provide your
-                        children with the
-                        education they deserve.<br><br>May Allah bless us all, and may He guide us on this journey of
-                        learning and
-                        growth.<br><br><i><b style="color: green;">Jazak Allahu khayr.</b></i><br></p> -->
+
             </div>
         </div>
     </div>
-    </div>
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card border" style="width: 22rem;">
-
-                    <div class="card-body border  border-0">
-                        <ul
-                            style="margin-bottom: 10px; color: rgb(119, 119, 119); font-family: Roboto, sans-serif; font-size: 14px;">
-                            <li>To fashion Godly human beings</li>
-                            <li>To build a great and pious society</li>
-                            <li>To endanger the spirit of vicegerent on earth</li>
-                            <li>To see oneself as duty-bound to change the world positively</li>
-                            <li>To entrench productive and beneficial existence among mankind.</li>
-                        </ul>
-                        <h5 class="card-title">OUR MISSION</h5>
-                        <p class="card-text"><a class="main_btn" href="#">Join Us</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card border " style="width: 22rem;">
-
-                    <div class="card-body border  border-0">
-                        <ul
-                            style="margin-bottom: 10px; color: rgb(119, 119, 119); font-family: Roboto, sans-serif; font-size: 14px;">
-                            <li>To fashion Godly human beings</li>
-                            <li>TO PROVIDE QUALITATIVE AND
-                                BALANCED TECHNICAL EDUCATION AT
-                                AFFORDABLE
-                                COST TO ALL MUSLIMS.</li>
-                        </ul>
-                        <h5 class="card-title">OUR VISION</h5>
-                        <p class="card-text"><a class="main_btn" href="#">Join Us</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="container mt-5">
-        <div class="row mission">
-            <div class="col-lg-6">
-                <div class="single-feature">
-                    <div class="title">
-                        <h4 style="color:black;">OUR MISSION</h4>
-                    </div>
-                    <div class="desc-wrap text-justify">
-                        <ul
-                            style="margin-bottom: 10px; color: rgb(119, 119, 119); font-family: Roboto, sans-serif; font-size: 14px;">
-                            <li>To fashion Godly human beings</li>
-                            <li>To build a great and pious society</li>
-                            <li>To endanger the spirit of vicegerent on earth</li>
-                            <li>To see oneself as duty-bound to change the world positively</li>
-                            <li>To entrench productive and beneficial existence among mankind.</li>
-                        </ul>
-                        <p class="wow fadeInDown"><a class="main_btn" href="#">Join Us</a></p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="single-feature">
-                    <div class="title">
-                        <h4 style="color:black;">OUR VISION</h4>
-                    </div>
-                    <div class="desc-wrap text-justify">
-                        <p>
-                            <span style="font-weight: bolder; color: rgb(119, 119, 119)">TO PROVIDE QUALITATIVE AND
-                                BALANCED TECHNICAL EDUCATION AT
-                                AFFORDABLE
-                                COST TO ALL MUSLIMS.</span><br>
-                        </p>
-                        <p class="wow fadeInDown"><a class="main_btn" href="#">Join Us</a></p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <div class="about_details">
-                    <center>
-                        <h2 style="color:black;font-size: 30px;">Principal Welcome Address</h2>
-                        <div class="line-mf" style="background:var(--default_color);"></div>
-                    </center><br>
-                    <p>Assalamu alaikum and a very warm welcome to everyone.<br><br>Today, I am honored to stand before
-                        you as the
-                        principal of this esteemed Islamic school. It is a great privilege to be a part of an
-                        institution that is
-                        dedicated to imparting knowledge and wisdom to the young generation, while nurturing them in the
-                        light of our
-                        Islamic faith and values.</p>
-                    <p><br>As you all know, education is a foundation of our society, and it is more important now than
-                        ever before to
-                        equip our students with the necessary skills and knowledge to succeed in a rapidly changing
-                        world. Our Islamic
-                        school is committed to providing a well-rounded education that not only focuses on academic
-                        excellence but also
-                        helps students develop a strong moral character and a deep connection to their faith.</p>
-                    <p><br>We believe that education is not just about gaining knowledge, but it is also about
-                        developing critical
-                        thinking skills, fostering creativity and innovation, and instilling values such as respect,
-                        responsibility, and
-                        compassion. Our curriculum is designed to meet the diverse needs of our students, and we strive
-                        to provide an
-                        environment that is conducive to learning, where every student is encouraged to reach their full
-                        potential.<br><br>In addition to academic excellence, we also place a strong emphasis on
-                        character development
-                        and spiritual growth. Our school offers a variety of programs and activities, including Islamic
-                        studies, Quranic
-                        studies, and community service opportunities, that help students grow in their faith and become
-                        active members
-                        of their communities.<br><br>As we embark on another academic year, I would like to remind
-                        everyone of the
-                        importance of working together to achieve our shared goals. Our students, teachers, parents, and
-                        staff are all
-                        critical to our success, and I encourage everyone to play their part in helping us create a
-                        dynamic and
-                        supportive learning environment.<br><br>In conclusion, I would like to express my deep
-                        appreciation for the
-                        trust that you have placed in us, and I assure you that we will do our utmost to provide your
-                        children with the
-                        education they deserve.<br><br>May Allah bless us all, and may He guide us on this journey of
-                        learning and
-                        growth.<br><br><i><b style="color: green;">Jazak Allahu khayr.</b></i><br></p>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <section class="section2">
         <div class="wrapper">
-            <div class="container2 mx-3 mb-4">
-                <div class="counter-ico">
-                    <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-                </div>
-                <!-- <i class="fas fa-utensils"></i> -->
+            <div class="container2 mx-3">
                 <span class="num" data-val="20">000</span>
-                <span class="text">CERTIFIED TEACHERS</span>
+                <i class="fas fa-chalkboard-teacher"></i>
+                <p class="para">CERTIFIED TEACHERS</p>
             </div>
             <div class="container2 mx-3">
-                <i class="fas fa-smile-beam"></i>
                 <span class="num" data-val="9">000</span>
-                <span class="text">OTHER OFFICES</span>
+                <i class="fas fa-building-o"></i>
+                <p class="para">OTHER OFFICES</p>
             </div>
             <div class="container2 mx-3">
-                <i class="fas fa-list"></i>
                 <span class="num" data-val="75">000</span>
-                <span class="text">TOTAL STUDENTS</span>
+                <i class="fas fa-graduation-cap"></i>
+                <p class="para">TOTAL STUDENTS</p>
             </div>
             <div class="container2 mx-3">
-                <i class="fas fa-star"></i>
                 <span class="num" data-val="17">000</span>
-                <span class="text">AVAILABLE COURSES</span>
+                <i class="fas fa-book-reader"></i>
+                <p class="para">AVAILABLE COURSES</p>
             </div>
         </div>
     </section>
@@ -433,14 +248,15 @@
         <div class="row justify-content-center">
             <div class="col-md-12 text-center">
                 <h3 style="color: black;">Our Departments</h3>
-                <p class="main_p">As a Technical school we have diffrent departments that serve as a vocational skills.
+                <p class="main_p">As a Technical school we have diffrent departments that serve as a vocational
+                    skills.
                 </p>
             </div>
             <span style="border-bottom: 6px solid #7fad39; margin-bottom: 23px; width: 53px;"></span>
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row  animate__animated animate__bounceInLeft" style="  --animate-duration: 4s;">
             <div class="col-lg-9">
                 <div class="grid_inner">
                     <div class="row" style="margin-bottom:-90px ;">
@@ -507,7 +323,7 @@
                             <div class="grid_item wd55">
                                 <div class="courses_item3">
                                     <img src="./images/course4.jpg" class="img-responsive img-fluid"
-                                        style="height: 270px;object-fit: fill" alt="">
+                                        style=" width:470px;height: 270px;object-fit: fill" alt="">
                                     <div class="hover_text">
                                         <a class="cat" href="#">Pry</a>
                                         <a href="#">
@@ -529,7 +345,7 @@
                 <div class="grid_item wd55">
                     <div class="courses_item3">
                         <img src="./images/cours5.jpg" class="img-responsive img-fluid"
-                            style="width:388px;height: 592px;object-fit: fill" alt="">
+                            style="width:388px;height: 620px;object-fit: fill" alt="">
                         <div class="hover_text">
                             <a class="cat" href="#">JSS</a>
                             <a href="#">
@@ -546,12 +362,13 @@
             </div>
         </div>
     </div>
-    <section class="teachers">
+    <section class="meet">
         <div class="container mt-2" style="margin-bottom: 103px;">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
                     <h3 style="color: black;">Meet Our Teachers</h3>
-                    <p class="main_p">There is a moment in the life of any aspiring astronomer that it is time to buy
+                    <p class="main_p">There is a moment in the life of any aspiring astronomer that it is time to
+                        buy
                         that first telescope. It’s exciting to
                         think about setting up your own viewing station.
                         <span style="border-bottom: 6px solid #7fad39; margin-bottom: 23px; width: 53px;"></span>
@@ -586,12 +403,28 @@
                             <p>Teachers</p>
                         </div>
                     </div>
+                    <div class="team_img">
+                        <img class="rounded-circle"
+                            src="https://portal.astc.sch.ng/assets/images/teachers/passport_1678094663.jpg" alt="">
+                        <div class="team_name">
+                            <h4>Raji Abdulwasiu Abiola</h4>
+                            <p>Teachers</p>
+                        </div>
+                    </div>
+                    <div class="team_img">
+                        <img class="rounded-circle"
+                            src="https://portal.astc.sch.ng/assets/images/teachers/passport_1678094663.jpg" alt="">
+                        <div class="team_name">
+                            <h4>Raji Abdulwasiu Abiola</h4>
+                            <p>Teachers</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="11">
-        <div class="container">
+        <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-md-10 align-items-center">
                     <div class="another text-center">
@@ -601,7 +434,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container animate__animated animate__zoomIn" style="animation-duration: 2s;">
             <div class="row">
                 <div class=" col-md-6">
                     <div class="gallery-item">
@@ -659,41 +492,33 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="row">
-                <div class=" col-md-3 gallery-item">
-                    <a href="#" class="link-item"><img src="enjoy/gallery-5.jpg" class="img-responsive img-fluid mb-3"
-                            width="500" height="150" alt="gallery"></a>
-                </div>
-                <div class=" col-md-3 gallery-item">
-                    <a href="#" class="link-item"><img src="enjoy/gallery-6.jpg" class="img-responsive img-fluid mb-3"
-                            width="500" height="150" alt="gallery"></a>
-                </div>
-                <div class=" col-md-3 gallery-item">
-                    <a href="#" class="link-item"><img src="enjoy/gallery-7.jpg" class="img-responsive img-fluid mb-3"
-                            width="500" height="150" alt="gallery"></a>
-                </div>
-                <div class=" col-md-3 gallery-item">
-                    <a href="#" class="link-item"><img src="enjoy/gallery-8.jpg" class="img-responsive img-fluid"
-                            width="500" height="150" alt="gallery"></a>
-                </div> -->
-
     </section>
-    <section class="impress_area">
+    <section class="impress_area mt-3">
         <div class="container">
             <div class="row justify-content-center ">
                 <div class="col-md-12">
-                    <div class="impress_inner text-center pt-4">
+                    <div class="impress_inner text-center" style="margin-top: 34px;">
                         <h2>Become a Student</h2>
                         <p>Join Our Future Engineer</p>
-                        <a class="main_btn2" href="https://admission.astc.sch.ng/">Apply to be a student</a>
+                        <a class="main_btn2" href="#">Apply to be a student</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="container">
-        <footer class="py-5">
-            <div class="row">
+    <div class="container-fluid footer2">
+        <footer class="py-5 ">
+            <div class="row justify-content-end">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
                 <div class="col-6 col-md-2 mb-3">
                     <h5>Section</h5>
                     <ul class="nav flex-column">
@@ -714,523 +539,16 @@
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
                     </ul>
-                </div>
-
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-5 offset-md-1 mb-3">
-                    <form>
-                        <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of what's new and exciting from us.</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                            <button class="btn btn-primary" type="button">Subscribe</button>
-                        </div>
-                    </form>
                 </div>
             </div>
 
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p>© 2022 Company, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook"></use>
-                            </svg></a></li>
-                </ul>
-            </div>
         </footer>
     </div>
-    <!-- <section class="footer">
-        <div class="container">
-            <div class="row justify-content-start">
-                <div class="col-lg-3 col-md-3 mt-2">
-                    <ul class="text-white " style="list-style-type: none;">
-                        <li class="py-2  text-white">Address: 60-49<br> Road 11378 New York</li>
-                        <li class="py-3 text-white">Phone: +65 11.188.888</li>
-                        <li class="text-white">Email: hello@colorlib.com</li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 mt-4">
-                    <h4 class="ms-4 text-white">Useful Links</h4>
-                    <ul style="list-style-type:none;color: white;">
-                        <li>About Us</li>
-                        <li>About Our Shop</li>
-                        <li>Secure Shopping</li>
-                        <li>Delivery infomation</li>
-                        <li>Privacy Policy</li>
-                        <li>Our Sitemap</li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 mt-5">
-                    <ul style="list-style-type:none; color: white;">
-                        <li>Who We Are</li>
-                        <li>Our Services</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
-                        <li>Innovation</li>
-                        <li>Testimonials</li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <h3 class="ms-4 text-white">Join Our Newsletter Now</h3>
-                    <p class="ms-4 text-white">Get E-mail updates about our latest shop and special offers.</p>
-                    <input type="text" style="background-color:white; border: 1px solid gainsboro;" class="py-2 mb-4"
-                        placeholder="Enter the email">
-                    <a class="text-white " href="#"
-                        style="background-color: rgb(0, 119, 255); padding: 10px 23px;text-decoration:none; font-size: 15px;">Subcribe</a>
-                    <ul style="list-style-type:none" class="media">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <p class="text-white">Copyright ©2022 All rights reserved | This template is made with <i
-                            class="fa fa-heart"></i> by
-                        <a href="#" class="text-decoration-none">Colorlib</a>
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <img src="./image/payment-item.png" class="img-reponsive img-fluid">
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- <section>
-        <div class="section-counter paralax-mf">
-            <div class="overlay-mf"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3 col-lg-3">
-                        <div class="counter-box">
-                            <div class="counter-ico">
-                                <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-                            </div>
-                            <div class="counter-num">
-                                <p class="counter">1</p>
-                                <span class="counter-text">CERTIFIED TEACHERS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-lg-3">
-                        <div class="counter-box pt-4 pt-md-0">
-                            <div class="counter-ico">
-                                <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-                            </div>
-                            <div class="counter-num">
-                                <p class="counter">0</p>
-                                <span class="counter-text">OTHER OFFICES</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-lg-3">
-                        <div class="counter-box pt-4 pt-md-0">
-                            <div class="counter-ico">
-                                <span class="ico-circle"><i class="ion-ios-people"></i></span>
-                            </div>
-                            <div class="counter-num">
-                                <p class="counter">0</p>
-                                <span class="counter-text">TOTAL STUDENTS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-lg-3">
-                        <div class="counter-box pt-4 pt-md-0">
-                            <div class="counter-ico">
-                                <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-                            </div>
-                            <div class="counter-num">
-                                <p class="counter">112</p>
-                                <span class="counter-text">AVAILABLE COURSES</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!--About us page-->
-    <!-- <section class="section2 section3">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class=" col-md-12 text-center mt-3">
-                    <div class="about mb-3">
-                        <h3 class="abouts" id="about">About</h3>
-                    </div>
-                    <p class="sed">We provide quality loans at an affordable interest rate for profit maximation</p>
-                </div>
-            </div>
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <div class="group align-items-center">
-                                    <div class="img-fluid text-center">
-                                        <img src="images/smile22.jpg" class="img-responsive img-fluid"
-                                            style="height:411px;" alt="group" title="group" width="550" height="330">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-md-6 mt-4">
-                                <h4>We provide great services and ideas</h4>
-                                <p>
-                                    Our product are designed to help people take better control of their finance, be it
-                                    making an investment or taking out a credit loan.
-                                </p>
-                                <p>
-                                    Invest and watch your money works for you. Investiong in loans and getting high
-                                    percentage of over 30% per annum
-                                </p>
-                                <p>
+    <button class="border-0"
+        style="margin-top: 3px;position:fixed;background-color:green;color:#FFFFFF; bottom: 100px; right: 50px; height: 50xp; width: 50px; font-size: 50px;"
+        onclick="scrollUp()">^</button>
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <div class="group align-items-center">
-                                    <div class="img-fluid text-center">
-                                        <img src="images/smile22.jpg" class="img-responsive img-fluid"
-                                            style="height:411px;" alt="group" title="group" width="550" height="330">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-md-6 mt-4">
-                                <h4>We provide great services and ideas</h4>
-                                <p>
-                                    Our product are designed to help people take better control of their finance, be it
-                                    making an investment or taking out a credit loan.
-                                </p>
-                                <p>
-                                    Invest and watch your money works for you. Investiong in loans and getting high
-                                    percentage of over 30% per annum
-                                </p>
-                                <p>
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <div class="group align-items-center">
-                                    <div class="img-fluid text-center">
-                                        <img src="images/smile22.jpg" class="img-responsive img-fluid"
-                                            style="height:411px;" alt="group" title="group" width="550" height="330">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-md-6 mt-4">
-                                <h4>We provide great services and ideas</h4>
-                                <p>
-                                    Our product are designed to help people take better control of their finance, be it
-                                    making an investment or taking out a credit loan.
-                                </p>
-                                <p>
-                                    Invest and watch your money works for you. Investiong in loans and getting high
-                                    percentage of over 30% per annum
-                                </p>
-                                <p>
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!--End of About us-->
-    <!--0ur services-->
-    <!-- <section class="section4 section5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <div class="our mb-3 fw-bold">
-                        <h3 class=" ">Our services</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center mx-5">
-                <div class=" col-lg-6 col-md-6 text-center border border-3 py-5 my-4 " id="service">
-                    <div class="icon ">
-                        <i class="icon-font bi bi-card-checklist fs-2"></i>
-                    </div>
-                    <div class="soft">
-                        <h4 class="fw-bold"><a href="#">Easy No-risk Application</a></h4>
-                        <p>Our online application is fast and easy to access</p>
-                        <button class="btn btn-danger btn-lg mt-4">Now!</button>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 text-center border border-3 py-5 my-4 ">
-                    <div class="icon">
-                        <i class=" left bi bi-bar-chart"></i>
-                    </div>
-                    <div class="soft">
-                        <h4 class="fw-bold "><a href="#">Flexible</a></h4>
-                        <p>We have a flexible payment schedule and investment return cycle</p>
-                        <button class="btn btn-danger btn-lg mt-4">Now!</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center mx-5">
-                <div class="col-lg-6 col-md-6 text-center border border-3 py-5 my-4 ">
-                    <div class="icon">
-                        <i class=" left icon-font bi bi-brightness-high"></i>
-                    </div>
-                    <div class="soft">
-                        <h4 class="fw-bold "><a href="#">24/7 Human Support</a></h4>
-                        <p class="ln-3">Have a question? Our team is at your service 24/7</p>
-                        <button class="btn btn-danger btn-lg mt-4">Now!</button>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 text-center border border-3 py-5 my-4 ">
-                    <div class="icon">
-                        <i class=" left bi bi-bar-chart"></i>
-                    </div>
-                    <div class="soft">
-                        <h4 class="fw-bold"><a href="#">Referral Bonus</a></h4>
-                        <p>Use your link yo invite family and friends and get #1000 Bonus</p>
-                        <button class="btn btn-danger btn-lg mt-4">Now!</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section8">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="update">
-                        <h3 class="text-white fw-bold">Subscribe For Updates</h3>
-                    </div>
-                    <p class="text-white">Join our 1000+ subscribers and get access to the latest tools, freebies,
-                        product announcements and much more!</p>
-                </div>
-                <div class="col-md-4 mt-3">
-                    <a href="#" class="text-decoration-none spring"></a><button
-                        class="btn btn-outline-light text-uppercase btn-lg  border-3">Subscribe now</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="11">
-        <div class="container">
-            <div class="row justify-content-center" id="pwork">
-                <div class="col-md-12 align-items-center">
-                    <div class="another text-center">
-                        <h3 class="some fs-2 mb-3">Some photos from<span class="our"> Our past services</span></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class=" col-lg-3 gallery-item text-center">
-                    <div class="card">
-                        <a href="#" class="link-item"><img src="gallery/business.webp" data-aos="flip-left"
-                                class="img-responsive img-fluid mb-3 w-100" alt="gallery"></a>
-                    </div>
-                </div>
-                <div class=" col-lg-3 gallery-item text-center">
-                    <div class="card">
-                        <a href="#" class="link-item"><img src="gallery/moey.jpg" data-aos="flip-right"
-                                class="img-responsive img-fluid mb-3 w-100" alt="gallery"></a>
-                    </div>
-                </div>
-                <div class=" col-lg-3 gallery-item text-center">
-                    <div class="card">
-                        <a href="#" class="link-item"><img src="gallery/construction.jpg" data-aos="flip-right"
-                                class="img-responsive w-100 img-fluid mb-3" alt="gallery"></a>
-                    </div>
-                </div>
-                <div class=" col-lg-3 gallery-item text-center">
-                    <div class="card">
-                        <a href="#" class="link-item"><img src="gallery/give.jpg" data-aos="flip-left"
-                                class="img-responsive img-fluid w-100 mb-3 card-body" alt="gallery"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class=" col-lg-3 gallery-item text-center">
-                    <div class="card my-3">
-                        <div class="card-body">
-                            <a href="#" class="link-item"><img src="gallery/explaination.jpg"
-                                    class="img-responsive w-100 img-fluid py-3" alt="gallery"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-lg-3 gallery-item text-center">
-                    <div class="card">
-                        <a href="#" class="link-item"><img src="gallery/infra.jpg" data-aos="flip-left"
-                                class="img-responsive w-100 img-fluid py-3" alt="gallery"></a>
-                    </div>
-                </div>
-                <div class=" col-lg-3 gallery-item text-center">
-                    <div class="card">
-                        <a href="#" class="link-item"><img src="gallery/agric.jpg" data-aos="flip-left"
-                                class="img-responsive w-100 img-fluid mb-3" alt="gallery"></a>
-                    </div>
-                </div>
-                <div class=" col-lg-3 gallery-item text-center">
-                    <div class="card">
-                        <a href="#" class="link-item"><img src="gallery/welding.jpg"
-                                class="img-responsive img-fluid w-100" data-aos="flip-left" img-fluid mb-3"
-                                alt="gallery"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section13">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <img src="assets/img/client-1.jpg" class="img-responsive img-thumbnail rounded-circle bg-light"
-                        width="10%">
-                    <h3 class="text-white">Saul Goodman</h3>
-                    <h4 class="text-white display-8">Ceo & Founder</h4>
-                    <p class="text-white">
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                        Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper."
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="second bg-light shadow-md">
-                <div class="row my-5" id="contact">
-                    <div class="col-md-3">
-                        <div class="icon ink ">
-                            <i class="bi bi-geo-alt"></i>
-                        </div>
-                        <div class="another mx-5">
-                            <h4>Location:</h4>
-                            <p>25,LONI STREET, OKITIPUPA<br></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="icon ink ">
-                            <i class="bi bi-clock"></i>
-                        </div>
-                        <div class="another mx-5">
-                            <h4>Open Hours:</h4>
-                            <p>Monday-Saturday:<br>08:00 AM - 05:00 PM</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="icon ink ">
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                        <div class="another mx-5">
-                            <h4>Email Address:</h4>
-                            <p>emmauelayo@yahoo.com<br></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="icon ink">
-                            <i class="bi bi-phone"></i>
-                        </div>
-                        <div class="another mx-5">
-                            <h4>Call:</h4>
-                            <p>+23408039753344<br>+2348157478411</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="form-group form">
-                <div class="row justify-content-center gap-3">
-                    <div class="col-md-6">
-                        <input type="text" name="name" class="form-control my-3" id="fname" placeholder="Your Name">
-                        <div class="errorMessage"></div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
-                        <div class="error22"></div>
-                    </div>
-                </div>
-                <div class="row justify-content-center my-2">
-                    <div class="col-md-12 text-center">
-                        <input type="text" class="form-control mb-3" name="subject" id="subject" placeholder="Subject">
-                        <div class="error33"></div>
-                        <textarea class="form-control" name="area" rows="5" id="area" placeholder="Message"></textarea>
-                        <div class="error44"></div>
-                        <button type="submit" class="btn btn-danger  mt-3" onclick="send()">Send Message</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="footer bg-dark my-5 py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12">
-                    <div class="align-items-center">
-                        <h3 class="text-center text-white fw-bold">lucent finance scheme</h3>
-                        <p class="text-center text-white fw-bold">We provide quality loans at an affordable interest
-                            rate for profit maximation
-                        <p>
-                        <div class="social text-center">
-                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                            <a href="#" class="skype"><i class="bx bxl-skype"></i></a>
-                            <a href="#" class="linkedln"><i class="bx bxl-linkedin"></i></a>
-                        </div>
-                        <div class="even text-center">
-                            <p class="text-white fw-bold">
-                                "Designed by"<a href="#" class="boot text-decoration-none text-uppercase">tobi
-                                    technology</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Popper JS -->
@@ -1246,65 +564,19 @@
     <script src="vendor/swiper/swiper-bundle.min.js"></script>
     <!---source file of the document-->
     <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        function send() {
-
-            fnRegex = /^([a-z]{4,})/;
-            if (!fnRegex.test(fname.value)) {
-                fname.className = "form-control is-invalid border border-3 border-danger";
-                errorMessage.innerText = "input at least 2 characters";
-                errorMessage.style.color = "red";
-            }
-            else {
-                errorMessage.className = " is-valid";
-                errorMessage.innerText = "";
-
-            }
-            emailRegex = /^([\w])([@])([.])([a-z])$/
-            if (!emailRegex.test(email.value)) {
-                email.className = "form-control is-invalid border border-3 border-danger";
-                error22.innerText = "Input a least 3 input";
-                error22.style.color = "red";
-            } else {
-                errror22.className = "is-valid";
-                error22.innerText = "";
-            }
-            messageRegex = /^([0-9]{8,})$/
-            if (!messageRegex.test(pass.value)) {
-                message.className = "form-control is-invalid border border-3 border-danger";
-                error33.innerText = "Input a least 3 input";
-                error33.style.color = "red";
-            } else {
-                errror33.className = "is-valid";
-                error33.innerText = "";
-            }
-            areaRegex = /^([a-z]{22})$/
-            if (!areaRegex.test(area.value)) {
-                phoneN.className = "form-control is-invalid border border-3 border-danger";
-                error44.innerText = "input 11 character";
-                error44.style.color = "red";
-            }
-            else {
-                error44.className = "is valid";
-                error44.innerText = "";
-            }
-        }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 1500)
     </script>
-
     <script>
         AOS.init();
         $('.carousel').carousel({
             interval: 3000
         })
     </script>
-
-    <!--aos sliding show-->
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-    <!-- Slicarousel CSS -->
-    <link rel="stylesheet" href="css/slicarousel.css">
-
     <!-- Slicarousel JS -->
     <script src="js/slicarousel.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

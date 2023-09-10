@@ -30,182 +30,201 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons-core.min.css">
+    <style>
+        .dd {
+            border: 1px solid black;
+            /* height: 2px; */
+            border: none;
+            padding: 1px 0px;
+        }
+    </style>
 </head>
 
-<body>
+<body onload="spec()">
     <section class="section">
         <div class="container py-5 px-4">
             <div class="row">
                 <div
                     class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
-                    <form class=" py-5">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="Firstname" class="form-control rounded-3" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">FirstName</label>
+                    <div class=" py-5">
+                        <form action="/register" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="Firstname" class="form-control rounded-3" id="fname"
+                                            name="firstname" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">FirstName</label>
+                                        <span class="dd">
+                                            <small id="err1" class=""></small>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="lastname" class="form-control rounded-3" id="floatingPassword"
-                                        placeholder="lastname">
-                                    <label for="floatingPassword">lastname</label>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="lastname" id="lname" name="lastname" class="form-control rounded-3"
+                                            id="floatingPassword" placeholder="lastname">
+                                        <label for="floatingPassword">lastname</label>
+                                        <span class="dd">
+                                            <small id="err2" class=""></small>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                                    <!-- <label for="floatingPassword">Gender</label> -->
-                                    <select class="form-control selectric">
-                                        <option>--None--</option>
-                                        <option>Male</option>
-                                        <option>Female</option>
-                                    </select>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control rounded-3" name="gender"
+                                            id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Gender</label>
+                                        <span class="dd">
+                                            <small id="err6"></small>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control rounded-3" name="password" id="pass"
+                                            id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                        <span class="dd">
+                                            <small id="err3"></small>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="password" class="form-control rounded-3" id="floatingPassword"
-                                        placeholder="Password">
-                                    <label for="floatingPassword">Password</label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="tel" class="form-control rounded-3" id="phoneNo" name="phone"
+                                            id="floatingPassword" placeholder="tel">
+                                        <label for="floatingPassword">PhoneNumber</label>
+                                        <span class="dd">
+                                            <small id="err4"></small>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="tel" class="form-control rounded-3" id="floatingPassword"
-                                        placeholder="tel">
-                                    <label for="floatingPassword">PhoneNumber</label>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control rounded-3" id="email" name="email"
+                                            id="floatingPassword" placeholder="Email">
+                                        <label for="floatingPassword">Email</label>
+                                        <span class="dd">
+                                            <small id="err5"></small>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control rounded-3" id="floatingPassword"
-                                        placeholder="Email">
-                                    <label for="floatingPassword">Email</label>
+                                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit"
+                                    onclick="show()">Sign
+                                    up</button>
+                                <div class="bottom">
+                                    <input type="checkbox" name="click to agree our personal terms" id=""
+                                        style="text-align: start; color:green">
+                                    <small class="text-muted">By clicking Sign up, you agree to the terms of
+                                        use.</small>
+                                    <hr class="my-4">
                                 </div>
-                            </div>
-                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign
-                                up</button>
-                            <div class="bottom">
-                                <input type="checkbox" name="click to agree our personal terms" id=""
-                                    style="text-align: start; color:green">
-                                <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
-                                <hr class="my-4">
-                            </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <div id="app">
-        <section class="section">
-            <div class="container mt-5">
-                <div class="row">
-                    <div
-                        class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
-                        <div class="login-brand">
-                            <img src="http://puffintheme.com/craft/codiepie/dist/assets/img/PG Application Portal-fill.svg"
-                                alt="logo" width="100" class="shadow-light rounded-circle">
-                        </div>
-                        <div class="card card-primary">
-                            <div class="card-header">
-                                <h4>Register</h4>
-                            </div>
-                            <div class="card-body">
-                                <form method="POST">
-                                    <div class="row">
-                                        <div class="form-group col-6">
-                                            <label for="frist_name">First Name</label>
-                                            <input id="frist_name" placeholder="First Name" type="text"
-                                                class="form-control" name="frist_name" autofocus>
-                                        </div>
-                                        <div class="form-group col-6">
-                                            <label for="last_name">Last Name</label>
-                                            <input id="last_name" type="text" placeholder="Last Name"
-                                                class="form-control" name="last_name">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input id="email" type="email" class="form-control" placeholder="Email"
-                                            name="email">
-                                        <div class="invalid-feedback">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-6">
-                                            <label for="password" class="d-block">Password</label>
-                                            <input id="password" type="password" placeholder="Password"
-                                                class="form-control pwstrength" data-indicator="pwindicator"
-                                                name="password">
-                                            <div id="pwindicator" class="pwindicator">
-                                                <div class="bar"></div>
-                                                <div class="label"></div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-6">
-                                            <label for="password2" class="d-block">Password Confirmation</label>
-                                            <input id="password2" type="password" placeholder="Password Confirmation"
-                                                class="form-control" name="password-confirm">
-                                        </div>
-                                    </div>
-                                    <div class="form-divider">Your Home</div>
-                                    <div class="row">
-                                        <div class="form-group col-6">
-                                            <label>Country</label>
-                                            <select class="form-control selectric">
-                                                <option>USA</option>
-                                                <option>Palestine</option>
-                                                <option>Syria</option>
-                                                <option>Malaysia</option>
-                                                <option>Thailand</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-6">
-                                            <label>Province</label>
-                                            <select class="form-control selectric">
-                                                <option>West Java</option>
-                                                <option>East Java</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-6">
-                                            <label>City</label>
-                                            <input type="text" class="form-control" placeholder="City">
-                                        </div>
-                                        <div class="form-group col-6">
-                                            <label>Postal Code</label>
-                                            <input type="text" class="form-control" placeholder="Postal Code">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" name="agree" class="custom-control-input" id="agree">
-                                            <label class="custom-control-label" for="agree">I agree with the terms and
-                                                conditions</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="simple-footer">
-                            Copyright &copy; PG Application Portal 2020
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div> -->
+    <script type="text/javascript">
+        var together = []
+        function spec() {
+            if (localStorage.portal) {
+                together = JSON.parse(localStorage.portal)
+            }
+
+        }
+        function show() {
+            if (fname.value == "" || lname.value == "" || email.value == "" || pass.value == "" || phoneNo.value == "") {
+                var firstname = fname.value;
+                var regfname = /^[a-zA-z]{3,15}$/;
+                if (regfname.test(firstname) == false) {
+                    err1.innerText = "Enter the value of  firstname";
+                    err1.style.color = "red";
+                }
+                else {
+                    console.log(regfname.test(firstname));
+                }
+
+                var lastname = lname.value;
+                var reglname = /^([a-zA-z]{3,15})$/;
+                if (reglname.test(lastname) == false) {
+                    err2.innerText = "Enter the value of  lastname";
+                    err2.style.color = "red";
+                }
+                else {
+                    console.log(reglname.test(lastname));
+                }
+
+                // var address = add.value;
+                // var regadd = /^[\w]+$/;
+                // if (regadd.test(address) == false) {
+                //     err3.innerText = "Enter the address";
+                //     err3.style.color = "red";
+                // }
+                // else {
+                //     console.log(regadd.test(address));
+                // }
+
+                var Email = email.value;
+                var regemail = /^([\w]+)([@])([a-z]{3,7})([.])([a-z]{3,6})(([.][a-z]{2,5})?)$/;
+                if (regemail.test(Email) == false) {
+                    err5.innerText = "Enter your Email";
+                    err5.style.color = "red";
+                }
+                else {
+                    console.log(regemail.test(Email));
+                }
+                var password = pass.value;
+                var regpass = /^([\w]{3,15})([&]?)([@]?)$/;
+                if (regpass.test(password) == false) {
+                    err3.innerText = "Enter the password";
+                    err3.style.color = "red";
+                }
+                else {
+                    console.log(regpass.test(password));
+                }
+
+                var PhoneNumber = phoneNo.value;
+                var regphon = /^([\d]){11}$/;
+                if (regphon.test(PhoneNumber) == false) {
+                    err4.innerText = "Enter the value of phoneNumber";
+                    err4.style.color = "red";
+                }
+                else {
+                    console.log(regphon.test(PhoneNumber));
+                }
+                var Gender = gen.value;
+                var reggen = /^([w]){6}$/;
+                if (reggen.test(Gender) == false) {
+                    err6.innerText = "Enter the value of Gender";
+                    err6.style.color = "red";
+                }
+                else {
+                    console.log(reggen.test(Gender));
+                }
+            }
+            else {
+                // var adminrecord = {
+                //     ffname: fname.value,
+                //     LstName: lname.value,
+                //     Email: email.value,
+                //     Password: pass.value,
+                //     Gender: gen.value,
+                //     PhoneNumber: phoneNo.value,
+
+                // }
+                // together.push(adminrecord)
+                // localStorage.portal = JSON.stringify(together)
+                // console.log(together)
+                // location.assign("signin.html")
+            }
+        }  
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>

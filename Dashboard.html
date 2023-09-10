@@ -4,21 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--Bootstrap4 file-->
-    <link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <!--vendor-->
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="vendor/boxicons/css/boxicons.css">
-    <link rel="stylesheet" type="text/css" href="vendor/glightbox/css/glightbox.css">
-    <link rel="stylesheet" type="text/css" href="vendor/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="vendor/aos/aos.css">
     <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
-    <link href="https://astc.sch.ng/new/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
     <!--Google font-->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
@@ -30,192 +31,242 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons-core.min.css">
-    <!--Dashboard setup-->
-    <!-- Open Sans Font -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
 </head>
 
 <body>
-    <div class="grid-container">
-
-        <!-- Header -->
-        <header class="header">
-            <div class="menu-icon" onclick="openSidebar()">
-                <span class="material-icons-outlined">menu</span>
-            </div>
-            <div class="header-left">
-                <span class="material-icons-outlined">search</span>
-            </div>
-            <div class="header-right">
-                <span class="material-icons-outlined">notifications</span>
-                <span class="material-icons-outlined">email</span>
-                <span class="material-icons-outlined">account_circle</span>
-            </div>
-        </header>
-        <!-- End Header -->
-
-        <!-- Sidebar -->
-        <aside id="sidebar">
-            <div class="sidebar-title">
-                <div class="sidebar-brand">
-                    <span class="material-icons-outlined">mood</span> LOGO
-                </div>
-                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
-            </div>
-
-            <ul class="sidebar-list">
-                <li class="sidebar-list-item">
-                    <a href="#">
-                        <span class="material-icons-outlined">dashboard</span> Dashboard
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="#">
-                        <span class="material-icons-outlined">leaderboard</span> Leaderboard
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="#">
-                        <span class="material-icons-outlined">forum</span> Forum
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="#">
-                        <span class="material-icons-outlined">phone</span> Support
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="#">
-                        <span class="material-icons-outlined">email</span> Messages
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="#">
-                        <span class="material-icons-outlined">poll</span> Reports
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="#">
-                        <span class="material-icons-outlined">settings</span> Settings
-                    </a>
-                </li>
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Teacher
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Create Teacher</a></li>
+                <li><a class="dropdown-item" href="#">Reset Teacher</a></li>
+                <li><a class="dropdown-item" href="#">Delete Teacher</a></li>
             </ul>
-        </aside>
-        <!-- End Sidebar -->
+        </a>
+        <a class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Student
+            </a>
 
-        <!-- Main -->
-        <main class="main-container">
-            <div class="main-title">
-                <h2>DASHBOARD</h2>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Create Student</a></li>
+                <li><a class="dropdown-item" href="#">Reset Student</a></li>
+                <li><a class="dropdown-item" href="#">Delete Student</a></li>
+                <li><a class="dropdown-item" href="#">Upload Student</a></li>
+            </ul>
+        </a>
+        <a class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Session
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Create Session</a></li>
+                <li><a class="dropdown-item" href="#">Set current Session</a></li>
+                <li><a class="dropdown-item" href="#">Migrate Current Session</a></li>
+            </ul>
+        </a>
+        <!-- <a href="#">Contact</a> -->
+    </div>
+    <div id="main">
+        <button id="openbtn" onclick="openNav()">☰</button>
+        <main class="container pt-3">
+
+            <!-- Page Title -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h6 class="text-muted">Hello, Bob. Welcome back.</h6>
+                    <h2>Your Dashboard is updated.</h2>
+                </div>
             </div>
+            <!-- End Page Title -->
 
-            <div class="main-cards">
-
-                <div class="card">
-                    <div class="card-inner">
-                        <h2>LIKES</h2>
-                        <span class="material-icons-outlined">thumb_up</span>
+            <!-- Statistics -->
+            <div class="row mb-3">
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-danger p-4 mb-4 rounded-5 shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="card-title text-uppercase text-white mb-0">
+                                        Likes
+                                    </h5>
+                                    <span class="h2 text-white font-weight-bold mb-0">
+                                        4,021
+                                    </span>
+                                </div>
+                                <div class="col-auto">
+                                    <span class="material-icons-outlined text-white h1 mt-4">thumb_up</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h1>4,021</h1>
                 </div>
-
-                <div class="card">
-                    <div class="card-inner">
-                        <h2>SUBSCRIBERS</h2>
-                        <span class="material-icons-outlined">subscriptions</span>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-success p-4 mb-4 rounded-5 shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="card-title text-uppercase text-white mb-0">
+                                        Subscribers
+                                    </h5>
+                                    <span class="h2 text-white font-weight-bold mb-0">
+                                        8,731
+                                    </span>
+                                </div>
+                                <div class="col-auto">
+                                    <span class="material-icons-outlined text-white h1 mt-4">subscriptions</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h1>8,731</h1>
                 </div>
-
-                <div class="card">
-                    <div class="card-inner">
-                        <h2>FOLLOWERS</h2>
-                        <span class="material-icons-outlined">groups</span>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-warning p-4 mb-4 rounded-5 shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="card-title text-uppercase text-white mb-0">
+                                        Followers
+                                    </h5>
+                                    <span class="h2 text-white font-weight-bold mb-0">
+                                        3,841
+                                    </span>
+                                </div>
+                                <div class="col-auto">
+                                    <span class="material-icons-outlined text-white h1 mt-4">groups</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h1>3,841</h1>
                 </div>
-
-                <div class="card">
-                    <div class="card-inner">
-                        <h2>MESSAGES</h2>
-                        <span class="material-icons-outlined">forum</span>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-primary p-4 mb-4 rounded-5 shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="card-title text-uppercase text-white mb-0">
+                                        Messages
+                                    </h5>
+                                    <span class="h2 text-white font-weight-bold mb-0">
+                                        1,962
+                                    </span>
+                                </div>
+                                <div class="col-auto">
+                                    <span class="material-icons-outlined text-white h1 mt-4">forum</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h1>1,962</h1>
                 </div>
-
             </div>
+            <!-- End Statistics -->
 
-            <div class="products">
-
-                <div class="product-card">
-                    <h2 class="product-description">Latest Updates</h2>
-                    <p class="text-secondary">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet facilisis nulla,
-                        consectetur
-                        pulvinar diam. Aliquam tempus vel quam.
-                    </p>
-                    <button type="button" class="product-button">
-                        <span class="material-icons-outlined">add</span>
-                    </button>
+            <div class="row align-items-center">
+                <!-- Latest Updates -->
+                <div class="col-xl-5 col-xxl-6">
+                    <div class="card bg-light p-4 mb-4 rounded-5 border-0">
+                        <div class="card-body">
+                            <div class="d-flex flex-column gap-2 align-items-start py-5">
+                                <h3 class="fw-bold">Latest Updates</h3>
+                                <p class="text-secondary">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet facilisis
+                                    nulla,
+                                    consectetur pulvinar diam. Aliquam tempus vel quam.
+                                </p>
+                                <button type="button"
+                                    class="btn btn-primary btn-lg text-white text-uppercase px-4 me-sm-3 rounded-5">
+                                    <span class="material-icons-outlined h1">add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- End Latest Updates -->
 
-                <div class="social-media">
-                    <div class="product">
-
-                        <div>
-                            <div class="product-icon background-red">
+                <!-- Social Media -->
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <div class="row row-cols-sm-2 g-4 p-4">
+                        <div class="d-flex flex-column gap-2">
+                            <div
+                                class="product-icon d-inline-flex align-items-center justify-content-center bg-danger text-white fs-4 rounded-4 shadow">
                                 <i class="bi bi-twitter"></i>
                             </div>
-                            <h1 class="text-red">+274</h1>
+                            <h4 class="text-danger fw-semibold mb-0">+274</h4>
                             <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
 
-                        <div>
-                            <div class="product-icon background-green">
+                        <div class="d-flex flex-column gap-2">
+                            <div
+                                class="product-icon d-inline-flex align-items-center justify-content-center bg-success text-white fs-4 rounded-4 shadow">
                                 <i class="bi bi-instagram"></i>
                             </div>
-                            <h1 class="text-green">+352</h1>
+                            <h4 class="text-success fw-semibold mb-0">+352</h4>
                             <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
 
-                        <div>
-                            <div class="product-icon background-orange">
+                        <div class="d-flex flex-column gap-2">
+                            <div
+                                class="product-icon d-inline-flex align-items-center justify-content-center bg-warning text-white fs-4 rounded-4 shadow">
                                 <i class="bi bi-facebook"></i>
                             </div>
-                            <h1 class="text-orange">-126</h1>
+                            <h4 class="text-warning fw-semibold mb-0">-126</h4>
                             <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
 
-                        <div>
-                            <div class="product-icon background-blue">
+                        <div class="d-flex flex-column gap-2">
+                            <div
+                                class="product-icon d-inline-flex align-items-center justify-content-center bg-primary text-white fs-4 rounded-4 shadow">
                                 <i class="bi bi-linkedin"></i>
                             </div>
-                            <h1 class="text-blue">+102</h1>
+                            <h4 class="text-primary fw-semibold mb-0">+102</h4>
                             <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
 
                     </div>
                 </div>
-
+                <!-- End Social Media -->
             </div>
-        </main>
-        <!-- End Main -->
 
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center text-secondary py-5">
+            <div class="container px-5">
+                Copyright &copy; 2023 Bob's Programming Academy.
+            </div>
+        </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 1500)
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Slicarousel CSS -->
+    <link rel="stylesheet" href="css/slicarousel.css">
+    <!-- Slicarousel JS -->
+    <script src="js/slicarousel.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="bootstrap5/js/bootstrap.js"></script>
     <script src="js/index.js"></script>
 </body>
 
